@@ -2,8 +2,13 @@
   "name": "multi-platform-chat-workspace-tool-backend",
   "version": "1.0.0",
   "description": "bash```git add README.md git commit -m \"first commit\" git branch -M main git remote add origin git@github.com:Aditya-Prakash14/Multi-Platform-Chat-Workspace-Tool-Backend.git git push -u origin main ```",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +23,11 @@
   "homepage": "https://github.com/Aditya-Prakash14/Multi-Platform-Chat-Workspace-Tool-Backend#readme",
   "dependencies": {
     "@prisma/client": "^5.16.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.11"
   },
   "devDependencies": {
